@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ SUPAFLY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                  url('https://images.unsplash.com/photo-1497032205916-ac775f0649ae?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      font-weight: 300;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background: #ff0055;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff3377;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .bio {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+      color: #ccc;
+    }
+
+    .socials a {
+      margin: 0 15px;
+      color: #ff0055;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      background: #111;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>DJ SUPAFLY</h1>
+  <p>Open Format • House • Hip Hop • Private Events</p>
+  <a href="#contact" class="btn">Book Me</a>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p class="bio">
+    DJ SUPAFLY brings high-energy sets blending house, hip hop, and open format vibes.
+    Available for clubs, private events, weddings, and corporate parties.
+  </p>
+</section>
+
+<section id="mixes">
+  <h2>Listen</h2>
+  <p>Embed your SoundCloud or Mixcloud player here.</p>
+  <!-- Example SoundCloud embed -->
+  <!-- Replace with your own -->
+  <iframe width="100%" height="166" scrolling="no" frameborder="no"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/308843496">
+  </iframe>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: laDJsupafly@gmail.com</p>
+  <p>Text: 408-981-2586</p>
+  <div class="socials">
+    <a href="#">Instagram</a>
+    <a href="#">SoundCloud</a>
+    <a href="#">TikTok</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 DJ SUPAFLY. All rights reserved.
+</footer>
+
+</body>
+</html>
