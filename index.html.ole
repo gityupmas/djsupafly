@@ -269,12 +269,10 @@
   prevBtn.addEventListener("click", () => loadTrack(currentIndex - 1, true));
   nextBtn.addEventListener("click", () => loadTrack(currentIndex + 1, true));
 
-  const FEATURED_USERNAME = "supafly";
-
   fetch(`${API}/public-tracks`)
     .then(res => res.json())
     .then(tracks => {
-      playlist = (tracks || []).filter(t => t.username === FEATURED_USERNAME);
+      playlist = tracks || [];
       if (!playlist.length) {
         titleEl.textContent = "No tracks available yet";
         return;
